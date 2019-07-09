@@ -1,0 +1,60 @@
+{{>banner}}
+
+(function(window) {
+    'use strict';
+
+    var mixitupPagination = function(mixitup) {
+        var h = mixitup.h;
+
+        {{>version-check}}
+
+        {{>config-callbacks}}
+
+        {{>config-class-names}}
+
+        {{>config-load}}
+
+        {{>config-pagination}}
+
+        {{>config-render}}
+
+        {{>config-selectors}}
+
+        {{>config-templates}}
+
+        {{>config}}
+
+        {{>model-pager}}
+
+        {{>model-page-stats}}
+
+        {{>ui-class-names}}
+
+        {{>control-definition}}
+
+        {{>control}}
+
+        {{>command-multimix}}
+
+        {{>command-paginate}}
+
+        {{>events}}
+
+        {{>operation}}
+
+        {{>state}}
+
+        {{>mixer-dom}}
+
+        {{>mixer}}
+
+        {{>facade}}
+    };
+
+    mixitupPagination.TYPE                    = 'mixitup-extension';
+    mixitupPagination.NAME                    = '{{name}}';
+    mixitupPagination.EXTENSION_VERSION       = '{{version}}';
+    mixitupPagination.REQUIRE_CORE_VERSION    = '{{coreVersion}}';
+
+    {{>module-definitions}}
+})(window);
